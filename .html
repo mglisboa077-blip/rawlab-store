@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawlab Store - Sneakers Premium</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background: #fff; color: #000; }
+        header { position: fixed; top: 0; width: 100%; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000; }
+        nav { max-width: 1200px; margin: 0 auto; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #FF6B35; }
+        .menu { display: flex; list-style: none; gap: 2rem; }
+        .menu a { text-decoration: none; color: #000; }
+        .icons { display: flex; gap: 1rem; }
+        .filtro { background: #f5f5f5; padding: 0.5rem; text-align: center; }
+        .filtro button { background: #FF6B35; color: #fff; border: none; padding: 0.5rem 1rem; margin: 0 0.5rem; cursor: pointer; border-radius: 5px; }
+        .hero { height: 60vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1920x600?text=Banner+Sneakers') center/cover; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; margin-top: 80px; }
+        .produtos { max-width: 1200px; margin: 4rem auto; padding: 0 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .card { border: 1px solid #eee; border-radius: 10px; overflow: hidden; transition: transform 0.3s; }
+        .card:hover { transform: scale(1.05); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card h3 { padding: 1rem; }
+        .preco { padding: 0 1rem 1rem; font-weight: bold; color: #FF6B35; }
+        .btn { background: #FF6B35; color: #fff; border: none; padding: 0.8rem; width: 100%; cursor: pointer; font-size: 1rem; }
+        footer { background: #000; color: #fff; text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) { .menu { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rawlab Store</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="icons">
+                <input type="search" placeholder="Buscar...">
+                <span>🛒</span>
+            </div>
+        </nav>
+        <div class="filtro">
+            <button>Novidades</button>
+            <button>Promoções</button>
+            <button>Mais Vendidos</button>
+        </div>
+    </header>
+    <section class="hero">
+        <div><h1>Sneakers Exclusivos na Rawlab Store</h1><p>Chegou a nova coleção!</p></div>
+    </section>
+    <section class="produtos">
+        <h2>Nossos Destaques</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x250?text=Sneaker+1" alt="Sneaker 1">
+                <h3>Nike Air Max</h3>
+                <div class="preco">R$ 599,90</div>
+                <button class="btn">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Repita cards para mais produtos -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Rawlab Store. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+    </footer>
+</body>
+</html>
